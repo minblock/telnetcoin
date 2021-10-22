@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/telnetcoin-project/telnetcoin-detached-sigs.git"
+- "url": "https://github.com/minblock/telnetcoin-detached-sigs.git"
   "dir": "signature"
 files:
 - "telnetcoin-osx-unsigned.tar.gz"

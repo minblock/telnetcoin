@@ -22,7 +22,7 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/telnetcoin-project/telnetcoin.git"
+- "url": "https://github.com/minblock/telnetcoin.git"
   "dir": "telnetcoin"
 files: []
 script: |

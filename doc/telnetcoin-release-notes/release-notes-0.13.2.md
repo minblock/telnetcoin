@@ -7,7 +7,7 @@ It is recommended to upgrade to this version.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/telnetcoin-project/telnetcoin/issues>
+  <https://github.com/minblock/telnetcoin/issues>
 
 Compatibility
 ==============

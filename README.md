@@ -1,7 +1,7 @@
 Telnetcoin Core integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/telnetcoin-project/telnetcoin.svg?branch=master)](https://travis-ci.org/telnetcoin-project/telnetcoin)
+[![Build Status](https://travis-ci.org/minblock/telnetcoin.svg?branch=master)](https://travis-ci.org/minblock/telnetcoin)
 
 https://telnetcoin.org
 
@@ -27,7 +27,7 @@ Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/telnetcoin-project/telnetcoin/tags) are created
+completely stable. [Tags](https://github.com/minblock/telnetcoin/tags) are created
 regularly to indicate new official, stable release versions of Telnetcoin Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).

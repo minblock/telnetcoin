@@ -29,7 +29,7 @@ Build Telnetcoin Core
 
 1. Clone the telnetcoin source code and cd into `telnetcoin`
 
-        git clone https://github.com/telnetcoin-project/telnetcoin
+        git clone https://github.com/minblock/telnetcoin
         cd telnetcoin
 
 2.  Build telnetcoin-core:
