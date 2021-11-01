@@ -1,4 +1,4 @@
-// Copyright (c) 2011-2016 The Bitcoin Core developers
+// Copyright (c) 2011-2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -47,8 +47,12 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 36
 
 #define QAPP_ORG_NAME "Telnetcoin"
-#define QAPP_ORG_DOMAIN "telnet.provigen.net"
+#define QAPP_ORG_DOMAIN "telnetcoin.org"
 #define QAPP_APP_NAME_DEFAULT "Telnetcoin-Qt"
 #define QAPP_APP_NAME_TESTNET "Telnetcoin-Qt-testnet"
+#define QAPP_APP_NAME_REGTEST "Telnetcoin-Qt-regtest"
+
+/* One gigabyte (GB) in bytes */
+static constexpr uint64_t GB_BYTES{1000000000};
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

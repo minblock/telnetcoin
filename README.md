@@ -1,9 +1,9 @@
 Telnetcoin Core integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/telnetcoin-project/telnetcoin.svg?branch=master)](https://travis-ci.org/telnetcoin-project/telnetcoin)
+[![Build Status](https://travis-ci.org/minblock/telnetcoin.svg?branch=master)](https://travis-ci.org/minblock/telnetcoin)
 
-https://telnet.provigen.net
+https://telnetcoin.org
 
 What is Telnetcoin?
 ----------------
@@ -15,7 +15,7 @@ out collectively by the network. Telnetcoin Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Telnetcoin Core software, see [https://telnet.provigen.net](https://telnet.provigen.net).
+the Telnetcoin Core software, see [https://telnetcoin.org](https://telnetcoin.org).
 
 License
 -------
@@ -27,10 +27,11 @@ Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/telnetcoin-project/telnetcoin/tags) are created
+completely stable. [Tags](https://github.com/minblock/telnetcoin/tags) are created
 regularly to indicate new official, stable release versions of Telnetcoin Core.
 
-The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
+The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md)
+and useful hints for developers can be found in [doc/developer-notes.md](doc/developer-notes.md).
 
 The developer [mailing list](https://groups.google.com/forum/#!forum/telnetcoin-dev)
 should be used to discuss complicated or controversial changes before working
@@ -57,7 +58,7 @@ There are also [regression and integration tests](/test), written
 in Python, that are run automatically on the build server.
 These tests can be run (if the [test dependencies](/test) are installed) with: `test/functional/test_runner.py`
 
-The Travis CI system makes sure that every pull request is built for Windows, Linux, and OS X, and that unit/sanity tests are run automatically.
+The Travis CI system makes sure that every pull request is built for Windows, Linux, and macOS, and that unit/sanity tests are run automatically.
 
 ### Manual Quality Assurance (QA) Testing
 

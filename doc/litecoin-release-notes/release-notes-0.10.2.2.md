@@ -1,13 +1,13 @@
 Telnetcoin Core version 0.10.2.2 is now available from:
 
-  <https://download.telnet.provigen.net/telnetcoin-0.10.2.2/>
+  <https://download.telnetcoin.org/telnetcoin-0.10.2.2/>
 
 This is a new major version release, bringing bug fixes and translation 
 updates. It is recommended to upgrade to this version.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/telnetcoin-project/telnetcoin/issues>
+  <https://github.com/minblock/telnetcoin/issues>
 
 Upgrading and downgrading
 =========================
@@ -52,7 +52,7 @@ is included in as separate release-notes.  This section describes the Telnetcoin
 Protocol:
 - Scrypt Proof-of-Work instead of sha256d, however block hashes are sha256d for performance reasons.
 - Telnetcoin TCP port 1335 (instead of 8333)
-- RPC TCP port 9332 (instead of 8332)
+- RPC TCP port 11334 (instead of 8332)
 - Testnet TCP port 11335 (instead of 18333)
 - Testnet RPC TCP port 1332 (instead of 18332)
 - 84 million coin limit  (instead of 21 million)

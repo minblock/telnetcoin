@@ -1,13 +1,13 @@
 Telnetcoin Core version 0.13.3 is now available from:
 
-  <https://download.telnet.provigen.net/telnetcoin-0.13.3/>
+  <https://download.telnetcoin.org/telnetcoin-0.13.3/>
 
 This is a new minor version release, including new features, various bugfixes and performance improvements.
 It is recommended to upgrade to this version.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/telnetcoin-project/telnetcoin/issues>
+  <https://github.com/minblock/telnetcoin/issues>
 
 Compatibility
 ==============
@@ -57,14 +57,14 @@ If you use this option, it is recommended to upgrade to this version as soon as 
 Reset Testnet
 -------------
 
-Testnet3 has been deprecated and replaced with Testnet4. The server port has been changed to 19335 however the RPC port remains
+Testnet3 has been deprecated and replaced with Testnet4. The server port has been changed to 1333 however the RPC port remains
 the same (1332).
 
 Testnet faucets can be located at:
 - http://testnet.telnetcointools.com
 - http://testnet.thrasher.io
 
-Developers who require the new testnet blockchain paramaters can find them [here](https://github.com/telnetcoin-project/telnetcoin/blob/0.13/src/chainparams.cpp#L214).
+Developers who require the new testnet blockchain paramaters can find them [here](https://github.com/minblock/telnetcoin/blob/0.13/src/chainparams.cpp#L214).
 
 Credits
 =======
