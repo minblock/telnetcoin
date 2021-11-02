@@ -145,9 +145,9 @@ public:
 
         chainTxData = ChainTxData{
             // Data from rpc: getchaintxstats 4096 2cdba8c47858d34cf0e02dfb8733263a3ed8705b1663ec7c158783d77b93e7ee
-            /* nTime    */ 1565379143,
-            /* nTxCount */ 36299075,
-            /* dTxRate  */ 0.388813310286546
+            /* nTime    */ 1635811152,
+            /* nTxCount */ 10945,
+            /* dTxRate  */ 0.88
         };
 
         /* disable fallback fee on mainnet */
