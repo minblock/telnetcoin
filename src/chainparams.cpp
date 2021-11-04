@@ -122,8 +122,8 @@ public:
         // Note that of those with the service bits flag, most only support a subset of possible options
         vSeeds.push_back(CDNSSeedData("seed.picsco.in", "seed.putez.org", true));
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,17);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
-        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,77); //segwit wallets begin with an x or y
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,67); //Segwit addresses will begin with U or T 
+        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,77); //segwit testnet wallets begin with an x or y
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,176);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
