@@ -88,12 +88,12 @@ public:
 
         // Deployment of BIP68, BIP112, and BIP113.
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1635567217; // Samethingayearfromthenpsalms
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1667103217; // CrackO'DevilsNightforlucktoshi
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1636081213; // Fri Nov 05 2021 03:00:13 GMT+0000
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1667103217; // Samethingayearfromthentoshis
 
         // Deployment of SegWit (BIP141, BIP143, and BIP147)
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].bit = 1;
-        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 1635567217; // CrackO'DevilsNightforluck
+        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 1636081213; // Fri Nov 05 2021 03:00:13 GMT+0000
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1667103217; // Samethingayearfromthentoshis
         
         // The best chain should have at least this much work.
@@ -107,10 +107,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0xba;
-        pchMessageStart[1] = 0xcd;
-        pchMessageStart[2] = 0xab;
-        pchMessageStart[3] = 0xba;
+        pchMessageStart[0] = 0xfb;
+        pchMessageStart[1] = 0xc0;
+        pchMessageStart[2] = 0xb6;
+        pchMessageStart[3] = 0xdb;
         nDefaultPort = 1335;
         nPruneAfterHeight = 100000;
 
