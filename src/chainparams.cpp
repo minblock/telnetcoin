@@ -88,12 +88,12 @@ public:
 
         // Deployment of BIP68, BIP112, and BIP113.
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1635567217; // Samethingayearfromthenpsalms
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1667103217; // CrackO'DevilsNightforlucktoshi
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1636081213; // Fri Nov 05 2021 03:00:13 GMT+0000
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1667103217; // Samethingayearfromthentoshis
 
         // Deployment of SegWit (BIP141, BIP143, and BIP147)
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].bit = 1;
-        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 1635567217; // CrackO'DevilsNightforluck
+        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 1636081213; // Fri Nov 05 2021 03:00:13 GMT+0000
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1667103217; // Samethingayearfromthentoshis
         
         // The best chain should have at least this much work.
@@ -107,10 +107,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0xba;
-        pchMessageStart[1] = 0xcd;
-        pchMessageStart[2] = 0xab;
-        pchMessageStart[3] = 0xba;
+        pchMessageStart[0] = 0xfb;
+        pchMessageStart[1] = 0xc0;
+        pchMessageStart[2] = 0xb6;
+        pchMessageStart[3] = 0xdb;
         nDefaultPort = 1335;
         nPruneAfterHeight = 100000;
 
@@ -122,8 +122,8 @@ public:
         // Note that of those with the service bits flag, most only support a subset of possible options
         vSeeds.push_back(CDNSSeedData("seed.picsco.in", "seed.putez.org", true));
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,17);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
-        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,77); //segwit wallets begin with an x or y
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,67); //Segwit addresses will begin with U or T 
+        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,77); //segwit testnet wallets begin with an x or y
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,176);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
