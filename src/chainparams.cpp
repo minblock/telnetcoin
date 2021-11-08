@@ -91,10 +91,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1667103217; // Samethingayearfromthentoshis
         
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000003633d6e85c");
+        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000000000146292c75e");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x096e592f32a0ecd544b5a95049f92cb0ba73155d88f29b101799619e7abb30db"); //10618
+        consensus.defaultAssumeValid = uint256S("0x52f4b69b797bef88969797e3e6946e235e209516c3a6cdc66f558576684fad26"); //9123
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -107,8 +107,8 @@ public:
         pchMessageStart[3] = 0xdb;
         nDefaultPort = 1335;
         nPruneAfterHeight = 100000;
-        m_assumed_blockchain_size = 22;
-        m_assumed_chain_state_size = 3;
+        m_assumed_blockchain_size = 19;
+        m_assumed_chain_state_size = 0.820;
 
         genesis = CreateGenesisBlock(1634423288, 1036752, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
