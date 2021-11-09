@@ -82,33 +82,33 @@ public:
         
         // Deployment of BIP68, BIP112, and BIP113.
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1635567217; // Samethingayearfromthenpsalms
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1667103217; // CrackO'DevilsNightforlucktoshi
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1636081213; // Fri Nov 05 2021 03:00:13 GMT+0000
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1667103217; // Samethingayearfromthentoshis
 
         // Deployment of SegWit (BIP141, BIP143, and BIP147)
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].bit = 1;
-        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 1635567217; // CrackO'DevilsNightforluck
+        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 1636081213; // Fri Nov 05 2021 03:00:13 GMT+0000
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1667103217; // Samethingayearfromthentoshis
         
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000003633d6e85c");
+        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000000000146292c75e");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x096e592f32a0ecd544b5a95049f92cb0ba73155d88f29b101799619e7abb30db"); //10618
+        consensus.defaultAssumeValid = uint256S("0x52f4b69b797bef88969797e3e6946e235e209516c3a6cdc66f558576684fad26"); //9123
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0xba;
-        pchMessageStart[1] = 0xcd;
-        pchMessageStart[2] = 0xab;
-        pchMessageStart[3] = 0xba;
+        pchMessageStart[0] = 0xfb;
+        pchMessageStart[1] = 0xc0;
+        pchMessageStart[2] = 0xb6;
+        pchMessageStart[3] = 0xdb;
         nDefaultPort = 1335;
         nPruneAfterHeight = 100000;
-        m_assumed_blockchain_size = 22;
-        m_assumed_chain_state_size = 3;
+        m_assumed_blockchain_size = 19;
+        m_assumed_chain_state_size = 0.820;
 
         genesis = CreateGenesisBlock(1634423288, 1036752, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
@@ -139,15 +139,15 @@ public:
 
         checkpointData = {
             {
-                {  10618, uint256S("0x096e592f32a0ecd544b5a95049f92cb0ba73155d88f29b101799619e7abb30db")},
+                { 9143, uint256S("0x4280d8fc7301269f73dec17789c3245de75390d7469b2c77eba2329225bc294a")},
             }
         };
 
         chainTxData = ChainTxData{
             // Data from rpc: getchaintxstats 4096 2cdba8c47858d34cf0e02dfb8733263a3ed8705b1663ec7c158783d77b93e7ee
-            /* nTime    */ 1635811152,
-            /* nTxCount */ 10945,
-            /* dTxRate  */ 0.88
+            /* nTime    */ 1636411225,
+            /* nTxCount */ 9144,
+            /* dTxRate  */ 0.08
         };
 
         /* disable fallback fee on mainnet */
