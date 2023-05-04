@@ -123,8 +123,8 @@ public:
         vSeeds.emplace_back("seed.picsco.in");
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,48);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,67); //Segwit addresses will begin with U or T 
-        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,50);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5); //Segwit testnet addresses will begin with a M 
+        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,67); //Segwit mainnet addresses will begin with U or T 
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,176);
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
