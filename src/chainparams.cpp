@@ -122,9 +122,9 @@ public:
         // release ASAP to avoid it where possible.
         vSeeds.emplace_back("seed.picsco.in");
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,48); //Legacy wallet addresses now begin with a T *(2023-07-28)
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5); //Segwit testnet addresses begin with an M instead of on the mainnet and it was released as an error so, if you mined like that ballstothewalls drooling they might be scrapped and latest clients requyired to mine this aswell so you will have to update to the latest version to get a wallet address thats usable without typig "legacy" in quotation marks for genning a new wallet address
-        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,67); //Segwit mainnet addresses will begin with a U or T 
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,65); //Legacy wallet addresses now begin with a T *(2023-07-28)
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5); //Segwit testnet paper addressing system will begin with a U or T 
+        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,67); //Segwit mainnet addresses began with an M instead of a capital u or t on the mainnet and it was released as an error so, if you mined like that ballstothewalls drooling they might be scrapped and latest clients requyired to mine this aswell so you will have to update to the latest version to get a wallet address thats usable without typig "legacy" in quotation marks for genning a new wallet address
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,176);
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
